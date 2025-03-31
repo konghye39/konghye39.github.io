@@ -52,6 +52,8 @@ Specialized in video processing, BLE device control, and clean architecture-base
 - Editor load 성능 최적화 (80% faster)
 - 📈 500M+ downloads, 4.4 rating
 
+[Kinemaster](https://play.google.com/store/apps/details?id=com.nexstreaming.app.kinemasterfree&hl=ko)
+
 ---
 
 ### 💡 NUEYNE – BLE 통합 테스트 앱  
