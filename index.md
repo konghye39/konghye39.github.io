@@ -103,22 +103,22 @@ Specialized in video processing, BLE device control, and clean architecture-base
 **2016.12 – 2017.05** | Java, Android Studio, Glide, ExoPlayer
 
 - 전체 UI 리뉴얼 및 SNS 로그인(Google, Kakao, Facebook)
-- `pull-to-refresh`, ExoPlayer, Glide 등 라이브러리 활용
-- 가사 파일 시각화, 웹 이벤트 페이지, 인앱 결제, 딥링크 구현  
+- pull-to-refresh, ExoPlayer, Glide 등 라이브러리 활용
+- 가사 파일 시각화, 인앱 결제, 딥링크 구현
 🔗 [에브리싱 - Google Play](#)
 
 ---
 
 ## 🧪 Side Projects
 
-### ✨ ComposeNote
-> Clean Architecture 기반 Jetpack Compose 메모 앱
+### ✨ ComposeMovieBox
+> Clean Architecture 기반 Jetpack Compose 영화 검색
 
 - MVVM + UseCase 구조 설계
 - Room + Coroutine + Flow 기반 비동기 구조
 - UI 테스트 구성 중
 
-🔗 [GitHub Repo](https://github.com/hongdev/composenote)
+🔗 [GitHub Repo](https://github.com/konghye39/MovieBox)
 
 ---
 
