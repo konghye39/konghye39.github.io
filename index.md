@@ -1,5 +1,5 @@
 # 👋 Android Developer
-**Android Developer with 6 years and 9 months of experience**  
+**Android Developer with 7 years and 4 months of experience**  
 Specialized in video processing, BLE device control, and clean architecture-based Android development.
 
 [GitHub](https://github.com/konghye39) · [Email](mailto:sa4824244@gmail.com)
@@ -8,7 +8,7 @@ Specialized in video processing, BLE device control, and clean architecture-base
 
 ## 🧑‍💻 About Me
 
-- 💼 **Experience**: 6 years 9 months in Android app development
+- 💼 **Experience**: 7 years 4 months in Android app development
 - ✍️ **Currently Studying**: Jetpack Compose, Modularization
 - 🚀 **Strengths**:
   - App architecture design and modular refactoring
@@ -32,7 +32,7 @@ Specialized in video processing, BLE device control, and clean architecture-base
 
 ### Others
 - BLE (GATT, OTA, Notifications, reconnect logic)
-- Video/Audio: ExoPlayer, FFmpeg, MediaCodec
+- Video/Audio: ExoPlayer, FFmpeg
 - Firebase (FCM, Auth, Crashlytics, Storage)
 - Advertising
 
@@ -43,13 +43,13 @@ Specialized in video processing, BLE device control, and clean architecture-base
 ### 📹 Video Editor App
 > Developed a video editing application
 
-**2023.07 – Present** | Kotlin, MVVM, Room, WorkManager
+**2023.07 – Present** | Kotlin, MVVM, Room, Coroutine
 
 - 자동 자막 기능
-- Auto cut
-- SRT 자막 Import
-- Admob
-- Editor load 성능 최적화 (80% faster)
+- Auto cut : 자체 내부 엔진 연동 및 Coroutine 기반 UI 처리
+- 상태 관리 리팩토링 : Livedata -> StateFlow + UiState 패턴 적용. UiState 통합하여 상태 관리 단순화
+- Admob 광고 전략 수립 : 편집 완료 후 전면광고 로드 타이밍 A/B Test 설계 및 분석 ➡️ 광고 수익 10% 증가
+- Editor load 성능 최적화 : 불필요한 중복 로직제거 및 Set 자료구조 활용으로 로드 속도 개선 ➡️ 대용량 프로젝트 기준 기존 대비 80% faster
 - 📈 500M+ downloads, 4.4 rating
 
 [Kinemaster](https://play.google.com/store/apps/details?id=com.nexstreaming.app.kinemasterfree&hl=ko)
@@ -73,7 +73,6 @@ Specialized in video processing, BLE device control, and clean architecture-base
 - Firebase Storage 기반 OTA 펌웨어 업데이트
 - 회원가입 및 로그인 (Firebase Auth)
 - 스토어 배포 및 유지보수  
-🔗 [CELLENA - Google Play](#)
 
 ---
 
@@ -105,7 +104,6 @@ Specialized in video processing, BLE device control, and clean architecture-base
 - 전체 UI 리뉴얼 및 SNS 로그인(Google, Kakao, Facebook)
 - pull-to-refresh, ExoPlayer, Glide 등 라이브러리 활용
 - 가사 파일 시각화, 인앱 결제, 딥링크 구현
-🔗 [에브리싱 - Google Play](#)
 
 ---
 
@@ -117,8 +115,6 @@ Specialized in video processing, BLE device control, and clean architecture-base
 - MVVM + UseCase 구조 설계
 - Room + Coroutine + Flow 기반 비동기 구조
 - UI 테스트 구성 중
-
-🔗 [GitHub Repo](https://github.com/konghye39/MovieBox)
 
 ---
 
