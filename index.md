@@ -2,7 +2,7 @@
 **Android Developer with 7 years and 4 months of experience**  
 Specialized in video processing, BLE device control, and clean architecture-based Android development.
 
-[GitHub](https://github.com/konghye39) · [Email](mailto:sa4824244@gmail.com)
+[Email](mailto:sa4824244@gmail.com)
 
 ---
 
