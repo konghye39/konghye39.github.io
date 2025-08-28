@@ -100,7 +100,112 @@
   </header>
 
   <main id="top">
-    <!-- 기존 본문 섹션들 (hero, services, works, about, contact) 그대로 유지 -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="kicker">BUILD • MEASURE • LEARN</div>
+          <h1>작지만 민첩한 팀,<br/>빠른 실험으로 <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">임팩트</span>를 만듭니다.</h1>
+          <p class="lead">BubbleBean은 모바일/웹 제품을 빠르게 검증하고 안정적으로 운영하는 파트너입니다. 초기 프로토타입부터 프로덕션 배포까지 — 함께 갑니다.</p>
+          <div class="cta">
+            <a class="btn primary" href="#contact">프로젝트 문의하기</a>
+            <a class="btn" href="#services">무엇을 하나요?</a>
+          </div>
+          <div class="statbar" role="list">
+            <div class="stat" role="listitem"><b>14일</b><br/><small class="muted">평균 MVP 리드타임</small></div>
+            <div class="stat" role="listitem"><b>99.9%</b><br/><small class="muted">지난 12개월 가용성</small></div>
+            <div class="stat" role="listitem"><b>5명</b><br/><small class="muted">핵심 멤버</small></div>
+          </div>
+        </div>
+        <div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="grid"></div>
+            <div class="badge">Live Preview</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <h2>서비스</h2>
+        <p class="muted">아이디어를 빠르게 형태로 만들고, 데이터를 통해 다음 스텝을 결정합니다.</p>
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <span class="pill">MOBILE • ANDROID / iOS</span>
+            <h3>모바일 앱 설계 & 개발</h3>
+            <p>네이티브/크로스 플랫폼 앱을 목표 지표에 맞춰 개발합니다. KTX 아키텍처, Clean Architecture, Compose/SwiftUI 적극 활용.</p>
+          </article>
+          <article class="card" role="listitem">
+            <span class="pill">WEB • SAAS</span>
+            <h3>경량 웹 제품</h3>
+            <p>정적 사이트부터 대시보드까지. SEO · 접근성 · 속도를 기본값으로, 필요한 것만 담습니다.</p>
+          </article>
+          <article class="card" role="listitem">
+            <span class="pill">OPS • DEVEX</span>
+            <h3>배포/운영 자동화</h3>
+            <p>GitHub Actions로 CI/CD, Sentry/CloudWatch로 모니터링, IaC로 재현 가능한 환경을 구성합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="container">
+        <h2>레퍼런스</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>BeanNote</h3>
+            <p>메모 앱 프로토타입 → 3주 내 베타 런칭. 사용자 세션 분석으로 온보딩 이탈 32% 감소.</p>
+          </div>
+          <div class="card">
+            <h3>Bubble Admin</h3>
+            <p>경량 관리자 대시보드. 정적 호스팅 + API 연동으로 비용 80% 절감.</p>
+          </div>
+          <div class="card">
+            <h3>Realtime Chat POC</h3>
+            <p>WebSocket/FCM 하이브리드 채팅 POC. 모바일에서 배터리 사용량 18% 절감.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>회사 소개</h2>
+        <p>BubbleBean은 제품-시장 적합성을 빠르게 검증해야 하는 팀을 돕는 빌더스 스튜디오입니다. 작은 릴리즈를 자주 만들고, 계측 가능한 지표로 학습합니다.</p>
+        <div class="stack" aria-label="기술 스택">
+          <span class="pill">Kotlin / Jetpack</span>
+          <span class="pill">Swift / SwiftUI</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">React / Vue</span>
+          <span class="pill">Cloudflare Pages</span>
+          <span class="pill">GitHub Actions</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>문의하기</h2>
+        <p class="muted">프로젝트 아이디어나 RFP가 있으신가요? 가볍게 이야기 나눠요.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>이메일</h3>
+            <p><a href="mailto:hello@bubblebean.dev" class="btn">hello@bubblebean.dev 로 메일 보내기</a></p>
+            <p style="color:var(--muted); font-size:14px">* GitHub Pages에서는 서버 처리가 어려워 <code>mailto:</code> 링크를 사용합니다.</p>
+          </div>
+          <div class="card">
+            <h3>프로젝트 브리프</h3>
+            <p>아래 항목을 포함해 주세요:</p>
+            <ul>
+              <li>목표(문제/지표)</li>
+              <li>필수 기능 / Nice-to-have</li>
+              <li>희망 일정 / 예산 범위</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
