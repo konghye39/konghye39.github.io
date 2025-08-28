@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BubbleBean — 메뉴</title>
+  <link rel="icon" href="../bubblebean_logo.PNG" />
+  <style>
+    body {font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, sans-serif; background:#0b1020; color:#e5e7eb; margin:0;}
+    header {padding:16px; background:#0f172a; border-bottom:1px solid rgba(148,163,184,.2);}
+    header a {color:#38bdf8; text-decoration:none; font-weight:600;}
+    .container {max-width:960px; margin:0 auto; padding:20px;}
+    h1 {color:#38bdf8;}
+    .cards {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px;}
+    .card {background: rgba(148,163,184,.06); padding:18px; border-radius:12px; border:1px solid rgba(148,163,184,.15)}
+    .card h2{margin-top:0}
+    .price {font-size:20px; font-weight:bold; color:#38bdf8; margin:8px 0;}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 홈으로</a>
+  </header>
+  <div class="container">
+    <h1>서비스 패키지 메뉴</h1>
+    <p>BubbleBean이 제공하는 주요 패키지입니다.</p>
+    <div class="cards">
+      <div class="card">
+        <h2>Starter 패키지</h2>
+        <p class="price">₩ 2,000,000 ~</p>
+        <p>✔ 2주 MVP 제작<br>✔ 기본 디자인 템플릿<br>✔ GitHub Pages/스토어 배포</p>
+      </div>
+      <div class="card">
+        <h2>Pro 패키지</h2>
+        <p class="price">₩ 5,000,000 ~</p>
+        <p>✔ 모바일 + 웹 통합 개발<br>✔ 맞춤형 UI/UX 디자인<br>✔ 자동화 배포(CI/CD) & 모니터링</p>
+      </div>
+      <div class="card">
+        <h2>Enterprise 패키지</h2>
+        <p class="price">문의</p>
+        <p>✔ 요구사항 기반 커스터마이징<br>✔ SLA 계약 지원<br>✔ 장기 운영 & 기술 파트너십</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:40px; color:#38bdf8;">추가 옵션</h2>
+    <ul>
+      <li>UI/UX 디자인 개선</li>
+      <li>DevOps 컨설팅</li>
+      <li>데이터 분석/로그 기반 인사이트</li>
+    </ul>
+  </div>
+</body>
+</html>
