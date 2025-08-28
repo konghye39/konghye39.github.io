@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BubbleBean — 작은 팀, 큰 임팩트</title>
+  <meta name="description" content="BubbleBean은 모바일과 웹을 아우르는 경량 솔루션으로 빠르게 가치를 검증하고 전달합니다." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="BubbleBean — 작은 팀, 큰 임팩트" />
+  <meta property="og:description" content="모바일/웹 경량 솔루션 전문, 빠른 프로토타이핑과 안정적 배포" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://username.github.io/" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0ea5e9/ffffff&text=BubbleBean" />
+  <link rel="icon" href="bubblebean_logo.PNG" />
+  <style>
+    :root{
+      --bg: #0b1020;
+      --panel: #0f172a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --brand: #0ea5e9;
+      --brand-2: #38bdf8;
+      --ring: rgba(56,189,248,.35);
+      --ok: #22c55e;
+      --warn: #f59e0b;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Apple SD Gothic Neo, '맑은 고딕', Arial, sans-serif; color:var(--text); background: radial-gradient(1200px 600px at 80% -10%, #0b5aa81a, transparent), radial-gradient(800px 400px at 10% 10%, #38bdf808, transparent), var(--bg);}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1120px; margin:0 auto; padding:0 20px}
+    header{position:sticky; top:0; z-index:20; backdrop-filter: blur(8px); background: linear-gradient(to bottom, rgba(11,16,32,.75), rgba(11,16,32,.35)); border-bottom:1px solid rgba(148,163,184,.12)}
+    .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700}
+    .logo{width:28px; height:28px; border-radius:999px; background:linear-gradient(145deg, var(--brand), var(--brand-2)); display:grid; place-items:center; font-size:14px}
+    .nav a.btn{padding:10px 14px; border:1px solid rgba(148,163,184,.2); border-radius:12px}
+    .nav .links{display:flex; gap:20px; align-items:center}
+    .nav .mobile{display:none}
+
+    .hero{padding:72px 0 40px}
+    .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:36px; align-items:center}
+    .kicker{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--brand-2)}
+    h1{font-size:40px; line-height:1.15; margin:8px 0 14px}
+    .lead{color:var(--muted); font-size:18px}
+    .cta{display:flex; gap:12px; margin-top:22px}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:12px 16px; border-radius:14px; border:1px solid rgba(148,163,184,.18); background:rgba(2,6,23,.6)}
+    .btn.primary{background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:#041018; font-weight:700; border: none; box-shadow:0 0 0 0 rgba(56,189,248,0);}
+    .btn.primary:focus, .btn.primary:hover{box-shadow:0 0 0 6px var(--ring)}
+    .statbar{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:28px}
+    .stat{background: rgba(148,163,184,.06); padding:14px 16px; border-radius:14px; border:1px solid rgba(148,163,184,.15)}
+    .stat b{font-size:20px}
+
+    .hero-art{position:relative; aspect-ratio: 4/3; border-radius:18px; background: radial-gradient(220px 160px at 60% 20%, rgba(56,189,248,.25), transparent), radial-gradient(300px 260px at 30% 80%, rgba(14,165,233,.2), transparent), linear-gradient(180deg, #0b132b, #0b1020); border:1px solid rgba(148,163,184,.18); box-shadow: 0 20px 60px rgba(2,6,23,.6), inset 0 0 0 1px rgba(14,165,233,.15)}
+    .grid{position:absolute; inset:0; background:radial-gradient(circle at 50% 30%, rgba(56,189,248,.35), transparent 40%), linear-gradient(transparent 19px, rgba(148,163,184,.08) 20px), linear-gradient(90deg, transparent 19px, rgba(148,163,184,.08) 20px); background-size: 100% 100%, 20px 20px, 20px 20px; border-radius:18px;}
+    .badge{position:absolute; right:16px; top:16px; font-size:12px; padding:8px 10px; border-radius:999px; background:rgba(2,6,23,.8); border:1px solid rgba(148,163,184,.24)}
+
+    section{padding:64px 0}
+    h2{font-size:28px; margin:0 0 12px}
+    p{line-height:1.7}
+    .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+    .card{background: rgba(148,163,184,.06); padding:18px; border-radius:16px; border:1px solid rgba(148,163,184,.15)}
+    .card h3{margin:8px 0 6px}
+    .pill{display:inline-block; font-size:12px; padding:6px 10px; border:1px solid rgba(148,163,184,.2); border-radius:999px; color:var(--muted)}
+
+    .stack{display:flex; gap:8px; flex-wrap:wrap}
+
+    footer{border-top:1px solid rgba(148,163,184,.12); padding:32px 0 48px; color:var(--muted)}
+    footer .foot{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap}
+
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns:1fr}
+      header .links{display:none}
+      .nav .mobile{display:flex; gap:10px}
+      .cards{grid-template-columns:1fr}
+      .statbar{grid-template-columns:1fr}
+      h1{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="BubbleBean Home">
+        <img src="bubblebean_logo.PNG" alt="BubbleBean 로고" style="height:28px; border-radius:6px;" />
+        <span>BubbleBean</span>
+      </a>
+      <nav class="links" aria-label="주요 메뉴">
+        <a href="#services">서비스</a>
+        <a href="#works">레퍼런스</a>
+        <a href="#about">회사소개</a>
+        <a href="/menu/">메뉴</a>
+        <a href="#contact" class="btn">문의</a>
+      </nav>
+      <div class="mobile">
+        <a class="btn" href="/menu/">메뉴</a>
+        <a class="btn" href="#contact">문의</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 기존 본문 섹션들 (hero, services, works, about, contact) 그대로 유지 -->
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="y"></span> BubbleBean</div>
+      <div><a href="#top">맨 위로</a></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
